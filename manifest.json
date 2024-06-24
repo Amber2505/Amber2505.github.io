@@ -1,11 +1,11 @@
 {
-    "name": "astral",
-    "short_name": "astral",
+    "name": "Advance Auto Solutions",
+    "short_name": "AAS",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Simplify your insurance quote gathering process with our all-in-one software. Easily collect essential customer information including drivers, vehicles, and homes to generate accurate quotes for your agency. Try it out now and improve your business operations!",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
