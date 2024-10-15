@@ -15,17 +15,21 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Simplify your insurance quote gathering process with our all-in-one software. 
+  Easily collect essential customer information including drivers, vehicles, and homes to generate accurate quotes for your agency. 
+  Try it out now and improve your business operations!">
+  <meta name="google-signin-client_id"
+    content="501796787127-tfd8s3loct39o368t66gjbtf9ee0f8n0.apps.googleusercontent.com">
+
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="astral">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="Advance Auto Solutions>
+  <link rel=" apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -34,16 +38,57 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <title>Advance Auto Solutions</title>
+  <title>Advance Auto Solutions: Unleash the Power of Quick Quotes and Seamless Client Communication</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-240159388-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-240159388-1');
+  </script>
+
+  <link rel="icon" type="image/png" href="images/logopurple.png" />
+  <meta property="og:title"
+    content="Advance Auto Solutions. Boost Productivity, Increase Efficiency and Close More Sales!" />
+  <meta property="og:description"
+    content="Simplify your insurance quote gathering process with our all-in-one software." />
+  <meta property="og:image" content="images/logopurple.png" />
+
 </head>
 
 <body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { firebase_auth } from "https://www.gstatic.com/firebasejs/9.18.0/firebase_auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyArlnUefgplDvHB90ZmKU6InajuuXP86tY",
+      authDomain: "advancelockscreen.firebaseapp.com",
+      projectId: "advancelockscreen",
+      storageBucket: "advancelockscreen.appspot.com",
+      messagingSenderId: "501796787127",
+      appId: "1:501796787127:web:397bee75961aa059558e32",
+      measurementId: "G-RY1DVFXFB0"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = null;
+    var serviceWorkerVersion = '2352860563';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
